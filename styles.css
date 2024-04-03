@@ -1,0 +1,73 @@
+body {
+  background-color: blue;
+}
+
+
+.header-div {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5);
+}
+h2 {
+  color: white;
+}
+
+h4 {
+  display: grid;
+  justify-items: center;
+  color: purple;
+}
+.block {
+    background-color: #f1f1f1;
+    border: 7px solid blue
+}
+
+
+.container {
+  display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows:repeat(4, 150px);
+    grid-template-areas:
+    "masonry1 responsive overlap overlap"
+    "masonry1 fluid explicitly-placed negative-space"
+    "flexible-breadth masonry2 explicitly-placed masonry3"
+    "dom-order masonry2 named-tracks named-tracks";
+     justify-content: center;
+
+}
+
+.masonry1{
+  grid-area: masonry1;
+}
+.responsive{
+  grid-area: responsive;
+}
+.overlap{
+  grid-area: overlap;
+}
+.fluid{
+  grid-area: fluid;
+}
+.explicitly-placed{
+  grid-area: explicitly-placed;
+}
+.negative-space{
+  grid-area: negative-space;
+}
+.flexible-breadth {
+  grid-area: flexible-breadth;
+}
+
+.masonry2{
+  grid-area: masonry2;
+}
+.masonry3{
+  grid-area: masonry3;
+}
+.dom-order{
+  grid-area: dom-order;
+}
+.named-tracks{
+  grid-area: named-tracks;
+}
+
