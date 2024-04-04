@@ -1,23 +1,40 @@
+* {
+  margin-top: 0;
+}
+
 body {
   background-color: blue;
 }
 
 
-.header-div {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(5);
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-top: 4vw;
 }
+
+
+.img-icon {
+  width: 26px;
+  height: 26px;
+}
+
+
 h2 {
   color: white;
 }
 
 h4 {
-  display: grid;
+  display: flex;
   justify-items: center;
-  color: purple;
+  color: cornflowerblue;
 }
 .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f1f1f1;
     border: 7px solid blue
 }
